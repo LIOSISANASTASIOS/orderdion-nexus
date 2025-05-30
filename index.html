@@ -1,0 +1,103 @@
+# Επαναδημιουργία του HTML demo αρχείου για το front-end του Orderdion App
+html_code = """
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <title>Souvlaki Nexus - Orderdion</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            margin: 0;
+            background-color: #1b1b1b;
+            color: #e0f7fa;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        header {
+            background-color: #00bcd4;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .menu {
+            padding: 20px;
+        }
+        .product {
+            background-color: #2c2c2c;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .product button {
+            background-color: #00bcd4;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            color: #1b1b1b;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .cart {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #004d40;
+            padding: 10px;
+            text-align: center;
+        }
+        .cart button {
+            background-color: #00e676;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            font-size: 16px;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Souvlaki Nexus</h1>
+        <p>Futuristic Flavors by Orderdion</p>
+    </header>
+    <div class="menu">
+        <div class="product">
+            <span>Σουβλάκι Χοιρινό - 2.50€</span>
+            <button>➕ Προσθήκη</button>
+        </div>
+        <div class="product">
+            <span>Καλαμάκι Κοτόπουλο - 2.70€</span>
+            <button>➕ Προσθήκη</button>
+        </div>
+        <div class="product">
+            <span>Πίτα Club - 4.00€</span>
+            <button>➕ Προσθήκη</button>
+        </div>
+        <div class="product">
+            <span>Πατάτες Τηγανητές - 1.80€</span>
+            <button>➕ Προσθήκη</button>
+        </div>
+        <div class="product">
+            <span>Αναψυκτικό - 1.20€</span>
+            <button>➕ Προσθήκη</button>
+        </div>
+    </div>
+    <div class="cart">
+        <button>🛒 Προβολή Καλαθιού</button>
+    </div>
+</body>
+</html>
+"""
+
+file_path = "/mnt/data/orderdion_souvlaki_nexus_demo.html"
+with open(file_path, "w", encoding="utf-8") as f:
+    f.write(html_code)
+
+file_path
